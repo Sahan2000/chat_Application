@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="650.0" prefWidth="400.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.chat_application.controller.LoadingWindowPageFormController">
+   <children>
+      <ImageView fx:id="imgLogo" fitHeight="157.0" fitWidth="200.0" layoutX="100.0" layoutY="136.0" pickOnBounds="true">
+         <image>
+            <Image url="@../image/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="100.0" layoutY="282.0" text="open" textFill="#9a9a9a">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Label>
+      <Label layoutX="213.0" layoutY="282.0" text="Chat" textFill="#6600ff">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Label>
+      <ProgressBar fx:id="prgBar" layoutX="31.0" layoutY="565.0" minHeight="-Infinity" minWidth="-Infinity" prefHeight="10.0" prefWidth="339.0" progress="0.31" styleClass="green-bar" stylesheets="@../styles/progracess_bar.css" />
+      <Label layoutX="126.0" layoutY="592.0" text="Terms &amp; Privacy Policy" />
+   </children>
+</AnchorPane>

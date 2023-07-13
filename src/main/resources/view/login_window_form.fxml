@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="650.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.chat_application.controller.LoginWindowFormController">
+   <children>
+      <ImageView fx:id="imgLogo" fitHeight="157.0" fitWidth="200.0" layoutX="100.0" layoutY="115.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../image/logo.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="80.0" layoutY="255.0" text="open" textFill="#9a9a9a">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Label>
+      <Label layoutX="193.0" layoutY="252.0" text="Chat" textFill="#6600ff">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtUser" focusColor="#6600ff" labelFloat="true" layoutX="96.0" layoutY="481.0" prefHeight="26.0" prefWidth="208.0" promptText="Username" unFocusColor="#6600ff" />
+      <JFXButton layoutX="135.0" layoutY="539.0" onAction="#btnJoinOnAction" prefHeight="35.0" prefWidth="117.0" stylesheets="@../../../../../../chatApplication/src/main/resources/Styles/btn.css" text="Login" textFill="#6600ff">
+         <styleClass>
+            <String fx:value="calendar" />
+            <String fx:value="border" />
+         </styleClass>
+         <font>
+            <Font size="18.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="119.0" layoutY="597.0" style="-fx-text-fill: gray;" text="Terms &amp; Privacy Policy" />
+   </children>
+</AnchorPane>
